@@ -1,5 +1,12 @@
 ---
+const pageTitle = "Über mich und diese Seite"
 
+const identity = {
+    firstName: "Eva",
+    country: "Deutschland",
+    occupation: "Software Developer",
+    hobbies: ["Wrestling", "Musik", ""]
+}
 ---
 
 <html lang="de">
@@ -8,17 +15,19 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Meine erste Astro-Seite</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
     <a href="/">Home</a>
     <a href="/blog/">Blog</a>
     <a href="/about/">Über</a>
-    <h1>Über diese Seite</h1>
+    <h1>{pageTitle}</h1>
     <p>
       Hier werde ich später weitere Informationen hinzufügen. Es wird sich auf
-      alle Fälle lohnen, immer mal wieder vorbeizuschauen
+      alle Fälle lohnen, immer mal wieder vorbeizuschauen.
       <p>Liebe Grüße<br />Eva</p>
+      <h2>UPDATE:</h2>
+
     </p>
   </body>
 </html>
